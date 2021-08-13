@@ -1,0 +1,27 @@
+Defensive Modeling of Fake News Through Online Social Networks
+
+
+Basic reproduction number, equilibrium, fake news, online social networks (OSNs), rumor detection, rumor propagation.
+
+
+Defensive_Modeling
+
+
+defensive_modeling
+
+
+uname
+gender
+address
+names
+news_subject
+news_desc
+news_date
+posted_country
+posted_media
+news_Score
+news_group
+
+
+
+

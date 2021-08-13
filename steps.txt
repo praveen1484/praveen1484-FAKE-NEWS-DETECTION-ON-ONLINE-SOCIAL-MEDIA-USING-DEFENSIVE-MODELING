@@ -1,0 +1,13 @@
+1.python installation
+2.wamp server installation
+3.pycharm installation
+
+how to run project:
+     1.open wampserver->php myadmin->import database
+     2.open pycharm->create newproject->give name to untitled->to create virtual environment(venv)->click two checkboxes
+      commands:
+           1.cd defensive_modeling
+           2.pip install django
+           3.pip install mysqlclient
+           4.pip install openpyxl
+           5.python manage.py runserver

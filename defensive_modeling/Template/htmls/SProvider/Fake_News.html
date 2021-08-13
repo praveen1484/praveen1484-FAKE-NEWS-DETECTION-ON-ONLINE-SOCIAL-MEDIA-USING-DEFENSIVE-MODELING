@@ -1,0 +1,88 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#FFFFFF;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+        .style2 {color: #FFFF00}
+        .style3 {color: #FF0000; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ <marquee behavior="alternate">ACCURACY OF FAKE NEWS ::</span> {{count}}</marquee>
+	<p class="text-uppercase pull-center style1">VIEW FAKE NEWS DETAILS!!! </p>
+                   <table border="0" bordercolor="#FF00FF">
+                      <tr><td bgcolor="#FF00FF"><span class="style8">Posted User Name</span></td>
+                      <td bgcolor="#FF00FF"><span class="style8">Gender</span></td>
+                      <td bgcolor="#FF00FF"><span class="style8">Address</span></td>
+                      <td bgcolor="#FF00FF"><span class="style8">News Name</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">News Subject</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">News Description</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">News_Date</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">Posted_Country</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">Posted_Media</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">News Score</span></td>
+                          <td bgcolor="#FF00FF"><span class="style8">News Group</span></td></tr>
+                            {% for object in objs %}
+                      <tr>
+                                          <td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.uname}}</div></td>
+
+                                        <td style="font-family:monospace; font-size:19px;  "><div align="center">{{object.gender}}</div></td>
+                                        <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.address}}</div></td>
+                          <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.names}}</div></td>
+                                         <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.news_subject}}</div></td>
+                                        <td bgcolor="#FF00FF" style="font-family:monospace; font-size:19px; "><div align="center">{{object.news_desc}}</div></td>
+                                        <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.news_date}}</div></td>
+                                        <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.posted_country}}</div></td>
+                                        <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.posted_media}}</div></td>
+                                        <td bgcolor="#FF0000" style="font-family:monospace; font-size:19px; "><div align="center">{{object.news_Score}}</div></td>
+                                        <td style="font-family:monospace; font-size:19px; "><div align="center">{{object.news_group}}</div></td>
+
+                                  </tr>
+
+                                        {% endfor %}
+                      </table>
+
+
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
